@@ -103,12 +103,17 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+/*    transition: background-color 0.1s ease-in-out;*/
     margin-top: 10px;
+    will-change: background-color;
 }
 
 .product-button:hover {
     background-color: #c0392b;
+}
+
+.product-button.added {
+    background-color: darkgray; /* Color when added to cart */
 }
 
 /* Pseudo-elements - Sale badge */
@@ -207,7 +212,7 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.1s;
     cursor: pointer;
   }
   
